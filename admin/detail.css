@@ -1,0 +1,156 @@
+/* Body và phần tử chính */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Container chính */
+.main-container {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép các thẻ tự động xuống dòng */
+  justify-content: space-between;
+  gap: 20px; /* Khoảng cách giữa các thẻ */
+  width: 100%;
+  max-width: 1500px;
+  /* padding: 20px; */
+  margin-left: 10px;
+  padding-top: 20px;
+}
+
+/* Thẻ sản phẩm */
+.book-info {
+  display: flex; /* Sử dụng flexbox để chia cột cho hình ảnh và thông tin */
+  width: 30%; /* Mỗi sản phẩm chiếm 30% chiều rộng của container */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Hình ảnh sản phẩm */
+.book-info .book-image {
+  flex: 1; /* Hình ảnh chiếm 1 phần không gian */
+  margin-right: 20px; /* Khoảng cách giữa ảnh và thông tin */
+}
+
+.book-info .book-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Thông tin sản phẩm */
+.book-info .book-details {
+  flex: 2; /* Thông tin chiếm 2 phần không gian */
+  text-align: left;
+}
+.book-details {
+  margin-left: 50px;
+}
+
+/* Tiêu đề sản phẩm */
+.book-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Các thông tin khác */
+.book-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+  margin-left: 15px;
+}
+
+.book-info .price {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.book-info .discount {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.book-info .description,
+.book-info .category,
+.book-info .publisher,
+.book-info .publish-year,
+.book-info .pages {
+  font-style: italic;
+}
+.addBooks {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid red;
+  background-color: red;
+  color: white;
+  margin-left: 1100px;
+  cursor: pointer;
+}
+.addBooks:hover {
+  background-color: white;
+  color: red;
+}
+.logout {
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  border: 0.5px solid red;
+  background-color: #fb9287;
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.fix-button,
+.delete-button {
+  width: 60px;
+  height: 40px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+.delete-button {
+  background-color: #e74c3c;
+  cursor: pointer;
+  margin-top: 2px;
+  margin-left: 20px;
+}
+.delete-button:hover {
+  background-color: red;
+}
+.fix-button {
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  display: inline-block;
+  /* padding: 10px 20px;     */
+  background-color: #abacae;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+a {
+  padding-top: 8px;
+  font-size: 14px;
+}
+.fix-button:hover {
+  background-color: #999;
+}
